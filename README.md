@@ -131,6 +131,12 @@ docker run -t --rm -v ~:/root -v /:/mnt/fs -p 8000:8000 coderaiser/cloudcmd
 Config would be read from home directory, hosts root file system would be mount to `/mnt/fs`,
 `8000` port would be exposed to hosts port.
 
+Options can be also specified as follows.
+
+```sh
+docker run -t --rm -v ~:/root -v /:/mnt/fs -p 8000:8000 coderaiser/cloudcmd --no-terminal --no-contact
+```
+
 Also you could use [docker compose](https://docs.docker.com/compose/ "Docker Compose") with `docker-compose.yml`:
 
 ```yml

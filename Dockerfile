@@ -20,5 +20,5 @@ ENV cloudcmd_terminal_path gritty
 
 EXPOSE 8000
 
-ENTRYPOINT ["/usr/src/app/bin/cloudcmd.js"]
+ENTRYPOINT ["npm", "start", "-cwd", "/usr/src/app", "--"]
 
